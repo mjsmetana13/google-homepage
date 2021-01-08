@@ -1,37 +1,74 @@
 <html>
     <head>
         <style>
-            input{
+            #searchbar{
+                text-align: center;
                 font-size: 30px;
-                border-radius: 15px 15px;
+                border-radius: 30px 30px;
+                border-style: solid;
+                background-image:url("https://p.kindpng.com/picc/s/33-336780_search-icon-grey-png-transparent-png.png") ;
+                background-position:left ;
+                background-repeat: no-repeat;
+                background-size: 28px;
+                background-position-x: 20px;
+            }
+            input:hover{
+                box-shadow: 5px 5px 5px rgb(230, 230, 230);
+        
             }
             button{
                 background-color: rgb(248, 248, 248);
                 margin: 15px;
                 padding: 5px;
                 border-radius: 5px 5px;
+                border: 2px;
+            }
+            button:hover{
+                box-shadow: 5px 5px 5px lightgray;
+            }
+            #sign{
+                border-radius: 3px 3px;
+                padding: 8px;
+                margin-left: 80px;
+                margin-right: 5px;
+                color: snow;
+                background-color: rgb(3, 120, 216);
+                text-decoration: none;
+            }
+            #sign:hover{
+                background-color: rgb(137, 137, 255);
+                box-shadow: 5px 5px 5px lightslategrey;
             }
             #img{
                 margin: 150px auto 40px;
                 display:block;
             }
-            form{
+            #srch{
                 text-align: center;
             }
             a{
+                text-decoration: none;
                 padding-left: 15px;
                 padding-right: 15px;
                 color:rgb(43, 43, 43)
             }
+            a:hover{
+                box-shadow: 0px 1.5px 0px rgb(2, 247, 75);
+                border-radius: 650%;
+            }
             #menu{
                 border: 0px;
+                position: fixed;;
+                top: 5px;
             }
             #footer {
                 background-color: rgb(202, 202, 202);
-                bottom:10px;
+                bottom:0px;
+                left: 0px;
+                right: 0px;
                 font-size:10pt;
-                height:35px;
-                position:fixed;
+                height:50px;
+                position: fixed;
                 width:100%
             }
             #pri{
@@ -43,6 +80,7 @@
             #set{
                 padding-left: 10px;
             }
+            
             #rightft{
                 display: flex;
                 justify-content: flex-end;
@@ -87,42 +125,45 @@
                 margin: 15px auto 15px;
             }
         </style>
+        <title>
+            Google
+        </title>
     </head>
     <body>
         <ul id="lft">
             <li>
-                <a id="about" href="https://web.archive.org/web/20191130234759/https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a id="about" href="">About</a>
             </li>
             <li>
-                <a id="store" href="https://web.archive.org/web/20191130234759/https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+                <a id="store" href="">Store</a>
             </li>
         </ul>
         <ul id="rt">
            <li>
-                <a id="Gmail" href="https://web.archive.org/web/20191130234759/https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a>
+                <a id="Gmail" href="">Gmail</a>
             </li>
             <li>
-                <a id="images" href="https://web.archive.org/web/20191130234759/https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
+                <a id="images" href="">Images</a>
             </li>
             <li>
-               <a id="menu" href="https://web.archive.org/web/20191130234759/https://www.google.com/intl/en/about/products?tab=wh"><img width="50" height="50" src="https://static.thenounproject.com/png/756729-200.png" alt="menu" ></a>
+               <a id="menu" href=""><img width="40" height="40" src="https://static.thenounproject.com/png/756729-200.png" alt="menu" ></a>
             </li>
             <li>
-                <a id="sign" href="https://web.archive.org/web/20191130234759/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/">Sign in</a>
+                <a id="sign" href="">Sign in</a>
             </li>
         </ul>            
         <div>
             <img id="img"src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="googlelogo">
-            <form>
+            <div id="srch">
                 <input type="search" name="search" id="searchbar"> 
                 <div id="space"></div>
                 <button id="search" type="submit">Google Search</button>
                 <button id="lucky" type="submit">I'm Feeling Lucky</button>
-            </form> 
+            </div> 
         </div>
     </body>
     <footer id="footer">
-        <div>
+        <div id="gridft">
             <span id="leftft">
                 <a id="ad" href="">Advertising</a>
                 <a id="bus" href="">Business</a>
